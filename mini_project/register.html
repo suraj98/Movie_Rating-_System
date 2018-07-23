@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Simple Form </title>
+    <link rel="stylesheet" type="text/css" href="style_one.css">
+    
+    <script>
+    function validateForm() 
+    {
+         var x1 = document.forms["myForm"]["fir"].value;
+         var x2 = document.forms["myForm"]["lastname"].value;
+         var x3 = document.forms["myForm"]["email"].value;
+         var pass1 = document.forms["myForm"]["pass"].value;
+         var pass2 = document.forms["myForm"]["pass1"].value;
+         var n = pass1.localeCompare(pass2);
+        
+    if (x1 == "") 
+    {
+        alert("First Name must be filled out");
+        return false;
+    }
+    if (x2 == "") 
+    {
+        alert("Last Name must be filled out");
+        return false;
+    }
+    if (x3 == "") 
+    {
+        alert("Email must be filled out");
+        return false;
+    }
+        
+    
+   
+    }
+        
+    var myInput = document.getElementById("pass");    
+    myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(!myInput.value.match(lowerCaseLetters)) { 
+     alert("lowercase not found");
+        return false;
+  }
+
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(!myInput.value.match(upperCaseLetters)) { 
+   alert("Upper Case letter not found");
+        return false;
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) { 
+     alert("Number not found");
+        return false; 
+  }
+        
+    }
+</script>
+
+</head>
+<body>
+    <div class="done">
+    
+    <h1>Registration Form</h1>
+    <div class="first" >
+    <form action="register.php" name="myForm" onsubmit="return validateForm()" method="POST">
+        
+        First Name <input type="text" name="fir">
+        Last Name<input type="text" name="lastname">
+        Email<input type="email" name="email">
+        Password<input type="password" name="pass"   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        Confirm Password<input type="password" name="pass1"  placeholder="Confirm Pasword">
+        
+        <div class="second">
+            <input type="radio" id="male" name="gender"> <label for="male">Male</label> 
+            <input type="radio" id="female" name="gender"> <label for="female">Female</label><br>
+        </div>
+        
+        
+        <input type="submit" name="Submit" >
+    </form>
+   
+        </div></div>
+</body>
+
+
+
+
+</html>

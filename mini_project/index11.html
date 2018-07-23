@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+       
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "project";
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) 
+    die("Connection failed: " . $conn->connect_error); 
+          
+          
+      $sql = "SELECT name FROM page where img='img25.jpg'";
+$name = $conn->query($sql);
+      Ssql = "SELECT time FROM page where img='img25.jpg'";
+$time = $conn->query($sql);
+      Ssql = "SELECT genre FROM page where img='img25.jpg'";
+$genre = $conn->query($sql);
+      Ssql = "SELECT type FROM page where img='img25.jpg'";
+$type = $conn->query($sql);
+      Ssql = "SELECT img FROM page where img='img25.jpg'";
+$img = $conn->query($sql);
+      Ssql = "SELECT vid_link FROM page where img='img25.jpg'";
+$vid_link = $conn->query($sql);
+      Ssql = "SELECT director FROM page where img='img25.jpg'";
+$director = $conn->query($sql);
+      Ssql = "SELECT writers FROM page where img='img25.jpg'";
+$writers = $conn->query($sql);
+      Ssql = "SELECT stars FROM page where img='img25.jpg'";
+$stars = $conn->query($sql);
+      Ssql = "SELECT time FROM page where img='img25.jpg'";
+$time1 = $conn->query($sql);
+      Ssql = "SELECT summary FROM page where img='img25.jpg'";
+$summary = $conn->query($sql);
+      Ssql = "SELECT certificate FROM page where img='img25.jpg'";
+$certificate = $conn->query($sql);
+      Ssql = "SELECT parents_guide FROM page where img='img25.jpg'";
+$parents_guide = $conn->query($sql);
+      Ssql = "SELECT facebook FROM page where img='img25.jpg'";
+$facebook = $conn->query($sql);
+      Ssql = "SELECT instagram FROM page where img='img25.jpg'";
+$instagram = $conn->query($sql);
+      Ssql = "SELECT country FROM page where img='img25.jpg'";
+$country = $conn->query($sql);
+        Ssql = "SELECT language FROM page where img='img25.jpg'";
+$language = $conn->query($sql);
+        Ssql = "SELECT release_date FROM page where img='img25.jpg'";
+$release_date = $conn->query($sql);
+        Ssql = "SELECT production_co FROM page where img='img25.jpg'";
+$produc = $conn->query($sql);
+        Ssql = "SELECT runtime FROM page where img='img25.jpg'";
+$runtime = $conn->query($sql);
+?>
+<html>
+
+<head>
+  <title>colour_orange</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Movie<span class="logo_colour">Rating</span></a></h1>
+          <h2>Simple. Rating . Website System.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="examples.php">Movies</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+          <h3>Top India Charts</h3>
+          <h4> <a href="#">Top Rated Hindi Movie</a></h4>
+          <h4> <a href="#">Top Rated Tamil Movie</a></h4>
+          <h4> <a href="#">Top Rated Malayalam Movie</a></h4>
+          <h4> <a href="#">Top Rated Telugu Movie</a></h4>
+          <br><br>
+          <hr>
+          <br><br>
+          <h3>Now Playing (Box Office)</h3>
+          <h5> <a href="#">Black Panther</a></h5>
+          <h5> <a href="#">A Wrinkle in Time</a></h5>
+          <h5> <a href="#">The Strangers: Prey at Night</a></h5>
+          <h5> <a href="#">Red Sparrow</a></h5>
+          <h5> <a href="#">Game Night</a></h5>
+          <br>
+          <h5> <a href="#">See more box office results</a></h5>
+<br><br>
+          <hr>
+          <br><br>
+          <h3>Coming Soon</h3>
+          <h5> <a href="#">Pacific Rim Uprising</a></h5>
+          <h5> <a href="#">Unsane</a></h5>
+          <h5> <a href="#">Sherlock Gnomes</a></h5>
+          <h5> <a href="#">Paul, Apostle of Christ</a></h5> <br>
+          <h5> <a href="#">See more coming soon</a></h5> 
+          
+          <br><br><hr>
+
+
+       
+        
+        <h3>Search</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+       
+      <div id="content">
+      
+          <h1><?php echo'$name' ; ?></h1>
+          <h4>TV-14 | 44min | Drama, Mystery | TV Series (2004–2012)</h4>
+          <hr>
+          <br>
+          <div class=img_index11>
+      <a href="#">  <img src="img25.jpg" alt="Nature"  width="172" height="268" class="imgl_index11" > </a>
+      <iframe class="imgr_index11" width="407" height="268" src="https://www.youtube.com/embed/q5gGKGyQM9Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>              
+         
+          <div>
+              <br>
+           <hr>
+              <br><br>
+              <h5>Director: Ratnaa Sinha</h5>
+              <h5>Writers: Kamal Pandey, Aditya Powar</h5>
+              <h5>Stars: Rajkummar Rao, Kriti Kharbanda, K.K. Raina | See full cast & crew</h5>
+              <hr>
+              <h2>Summary</h2>
+              <p>
+                  Satyendra aka Sattu (Rajkummar Rao) and Aarti (Kriti Kharbanda) meet for a proposed arranged marriage and fall in love in the process. On the night of their marriage, an unexpected turn of events turns their world upside down. Set in the backdrop of India's civil services, Shaadi Mein Zaroor Aana explores the challenges that Satyendra and Aarti face as a middle-class couple in India.
+              </p>
+              <hr>
+                  <br>
+                  <h5> Genres:Drama | Family | Romance</h5>
+                  <h5>Certificate: UA </h5>
+                  <h5>Parents Guide: Add content advisory for parents </h5>
+                  
+                  <hr>
+                  <h2>Details</h2>
+                  <h5>Official Sites: Facebook | Instagram </h5>
+                  <h5>Country: India</h5>
+                  <h5>Language: Hindi</h5>
+                  <h5>Release Date: 10 November 2017 (India) </h5>
+                  
+                  <hr>
+                  <h2>Company Credits</h2>
+                  <h5>Production Co: Soundrya Productions </h5>
+                  
+                  <hr>
+                  <h2>Technical Specs</h2>
+                    <h5>Runtime: 137 min</h5>
+          </div>  
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      Copyright &copy; suraj_shukla     </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body
+{
+   height: 90vh; 
+}
+.done
+{
+  /*background: url(raj1.png);  */
+    /*background-color:rgba(220,83,0,0.6);*/
+    background-color:skyblue;
+    border-color: black;
+    border-style: solid;
+    margin-left:400px ;
+    margin-right:400px ;
+    
+  
+}
+.first{
+    width:30%;
+    margin-left: 170px;
+   
+}
+.second{
+    
+}
+h1
+{
+    text-align:center;
+    font-size: 50px ;
+    color:darkcyan ;
+}
+form{
+    margin: 20px auto ;
+    width: 320 px ;
+    color:darkcyan;
+     font-family:cursive;
+    
+}
+input
+{
+    padding:  10px ;
+    font-size: inherit;
+   background-color: #d0d0e1 ;
+}
+
+input[type="text"]
+{
+    display:block;
+    margin-bottom:25px;
+    width : 100% ;
+    border: 2px solid black ;
+}
+input[type="password"]
+{
+    display:block;
+    margin-bottom:25px;
+    width : 100% ;
+    border: 2px solid black ;
+}
+input[type="email"]
+{
+    display:block;
+    margin-bottom:25px;
+    width : 100% ;
+    border: 2px solid black ;
+}
+input[type:"radio"]{
+    margin : 0 8px 25px 18px ;
+}
+input[type:"radio"]:first-child
+{
+    margin-left: 0 ;
+}
+input[type="submit"]
+{
+    margin-left:42% ;
+    width: 344 px;
+    height: 45 px ;
+    border: none ;
+    background :#52527a;
+    color:white;
+}
+input[type = "radio"]:checked + label 
+{
+    font-weight: bold;
+    font-size : 18 px ;
+}
